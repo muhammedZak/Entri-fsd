@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="shortcut icon" href="../images/contact.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../hompage/home.html"><img src="../images/Portfolio.hu_full_logo.png" alt="portfolio logo image"
+                width="200px"></a>
+        <nav>
+            <ul>
+                <li><a href="../hompage/home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label for="fname">Name</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="message" rows="5" placeholder="Write your message here..."
+                        required></textarea>
+                    <input class="submit-button" type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>Muhammed Zakariya 2025 &#xA9;</footer>
+</body>
+
+</html>

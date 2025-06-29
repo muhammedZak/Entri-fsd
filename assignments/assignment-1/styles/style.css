@@ -1,14 +1,27 @@
-/* || General setup */
+* {
+    box-sizing: border-box;
+}
 
-html,
-body {
+html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 html {
     font-size: 10px;
     background-color: #a9a9a9;
+}
+
+main {
+    flex: 1;
+    height: auto;
 }
 
 h1,
@@ -45,10 +58,17 @@ li {
 nav ul {
     padding: 0;
     list-style-type: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+li {
+    margin: 10px 0;
+}
+
+li a {
+    cursor: pointer;
 }
 
 nav a,
@@ -61,20 +81,28 @@ nav span {
     color: #0d080c89;
 }
 
-header {
-    height: 20vh;
+header h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-nav {
-    height: 20vh;
+header p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    font-size: 2em;
 }
 
-main {
-    height: 35vh;
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a8787;
 }
+
 
 footer {
-    height: 20vh;
+    height: 10vh;
     background-color: #9a8787;
     display: flex;
     justify-content: center;
@@ -83,4 +111,3 @@ footer {
 
 footer p {
     text-align: center;
-}

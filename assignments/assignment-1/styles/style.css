@@ -22,6 +22,8 @@ html {
 main {
     flex: 1;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,
@@ -37,8 +39,17 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2rem;
+}
+
+.projects-container {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.projects-container p {
+    margin: auto;
 }
 
 p,
@@ -59,7 +70,6 @@ nav ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -71,8 +81,7 @@ li a {
     cursor: pointer;
 }
 
-nav a,
-nav span {
+nav a {
     display: inline-block;
     font-size: 2rem;
     height: 3rem;
@@ -111,4 +120,39 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+.portfolio-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-container p {
+    line-height: 2.5em;
+    font-size: large;
+}
+
+.skill-container {
+    width: 70%;
+    height: 300px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.skill-container ul {
+    padding-left: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-container ul li {
+    list-style-type: none;
+
 }
